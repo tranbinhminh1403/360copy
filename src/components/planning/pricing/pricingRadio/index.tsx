@@ -1,5 +1,5 @@
 import { Radio } from "antd";
-import React from "react";
+ 
 import styles from "./styles.module.scss";
 
 interface PricingRadioProps {

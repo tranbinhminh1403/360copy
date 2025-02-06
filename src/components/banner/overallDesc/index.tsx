@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import AvatarGroup from "../avatarGroup";
 import CommonButton from "../../common/commonButton";
 import styles from "./styles.module.scss";

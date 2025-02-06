@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import TitleCard from "./titleCard";
 import styles from "./styles.module.scss";
 import { Carousel } from "antd";

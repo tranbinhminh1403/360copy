@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import styles from "./styles.module.scss";
 
 import youtube from "../../assets/social/youtube.png";

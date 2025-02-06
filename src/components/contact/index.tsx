@@ -1,5 +1,4 @@
 import { Col, Row } from 'antd'
-import React from 'react'
 import ContactContent from './content'
 import contactImage from '../../assets/contactIntro.png'
 import DisplayImage from '../common/displayImage'

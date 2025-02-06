@@ -1,6 +1,6 @@
 import { Col } from "antd";
 import { Row } from "antd";
-import React from "react";
+ 
 import styles from "./styles.module.scss";
 
 import infoBG from "../../assets/infoBG.png";

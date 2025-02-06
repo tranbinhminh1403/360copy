@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DisplayImage from "../../common/displayImage";
 import styles from "./styles.module.scss";
 import BasicModal from "../../modal";
 import ExampleContent from "../../modal/content";
+
+type ModalContent = {
+  title: string;
+  sections: Array<{
+    heading: string;
+    content: Array<{
+      label?: string;
+      text: string;
+    }>;
+  }>;
+};
 
 const ServiceCard = ({
   icon,
@@ -17,7 +28,7 @@ const ServiceCard = ({
   description: string;
   themeColor?: string;
   textColor?: string;
-  modalContent: string;
+  modalContent?: ModalContent;
 }) => {
   const [open, setOpen] = useState(false);
 

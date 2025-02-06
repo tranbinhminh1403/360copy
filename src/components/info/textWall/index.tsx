@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './styles.module.scss'
 import AnimatedSection from '../../common/animation'
 import { useWindowSize } from '../../../hooks/useWindowSize'

@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import React from "react";
+ 
 import PricingInfo from "./info";
 import Pricing from "./pricing";
 import styles from "./styles.module.scss";

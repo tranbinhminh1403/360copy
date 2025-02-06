@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import CardsCarousel from "./cardsCarousel";
 import styles from "./styles.module.scss";
 import { Col, Row } from "antd";

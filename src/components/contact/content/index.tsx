@@ -1,4 +1,3 @@
-import React from 'react'
 import CommonButton from '../../common/commonButton'
 import styles from './styles.module.scss'
 import { scrollToElement } from '../../../utils'

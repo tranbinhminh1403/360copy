@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import HeaderAndFooter from "../../components/headerAndFooter";
 import Banner from "../../components/banner";
 import Contact from "../../components/contact";

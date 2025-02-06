@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import styles from "./styles.module.scss";
 import DisplayImage from "../../common/displayImage";
 import AnimatedSection from "../../common/animation";

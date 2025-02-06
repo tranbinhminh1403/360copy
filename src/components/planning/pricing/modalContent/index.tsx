@@ -1,10 +1,10 @@
 import { Col, Form, Input, Row, Select, DatePicker, message } from "antd";
-import React from "react";
+ 
 import CommonButton from "../../../common/commonButton";
 import styles from "./styles.module.scss";
 // import checkIcon from "../../../../assets/check.png";
 // import DisplayImage from "../../../common/displayImage";
-import { selectOptions, genderOptions, pricingList } from "./optionsData";
+import { selectOptions, genderOptions } from "./optionsData";
 
 const ModalContent = ({
   onCancel,

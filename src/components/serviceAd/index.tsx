@@ -1,4 +1,3 @@
-import React from 'react'
 import CellIntro from './cell'
 import passportIcon from '../../assets/servicesAd/passport.png'
 import stackIcon from '../../assets/servicesAd/stack.png'

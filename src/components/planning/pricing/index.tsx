@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./styles.module.scss";
 import { Radio, Space } from "antd";
 import PricingRadio from "./pricingRadio";

@@ -1,11 +1,13 @@
-import React from "react";
 import styles from "./styles.module.scss";
 import { Card } from "antd";
 // import { Row } from "antd";
 
 interface ContentSection {
   heading: string;
-  content: Array<{ label: string; text: string }>;
+  content: Array<{ 
+    label?: string;
+    text: string; 
+  }>;
 }
 
 interface ModalContent {

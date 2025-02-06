@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './styles.module.scss'
 import DisplayImage from '../../common/displayImage';
 import quoteIcon from '../../../assets/avatar/quote.png';

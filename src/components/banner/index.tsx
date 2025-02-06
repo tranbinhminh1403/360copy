@@ -1,5 +1,4 @@
 import { Carousel } from "antd";
-import React from "react";
 import styles from './styles.module.scss'
 //import banner image
 import banner2 from "../../assets/banner/banner2.png";

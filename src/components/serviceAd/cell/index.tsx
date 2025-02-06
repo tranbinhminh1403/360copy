@@ -1,4 +1,4 @@
-import React from "react";
+ 
 import DisplayImage from "../../common/displayImage";
 import styles from "./styles.module.scss";
 

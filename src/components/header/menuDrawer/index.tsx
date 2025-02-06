@@ -1,4 +1,3 @@
-import React from 'react'
 import BasicDrawer from '../../common/drawer'
 
 const Sidemenu = ({open, onClose}: {open: boolean, onClose: () => void}) => {
