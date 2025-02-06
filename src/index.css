@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Verdana";
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+
+  color: white;
+  /* // height: 400px;
+  // background: transparent; */
+}
+
+/* .slick-dots {
+  li.slick-active button {
+
+  }
+
+  li button 
+} */
+
+.slick-dots li.slick-active button {
+  background: #ff385c !important;
+}
+
+.slick-dots li button {
+  background: #d9d9d9 !important;
+  bottom: 200px;
+  /* // width: 30px !important;
+  // height: 5px !important;
+  // border-radius: 20px !important; */
+}
+
+@media (min-width: 990px) {
+  .slick-dots {
+    display: none;
+  }
+}

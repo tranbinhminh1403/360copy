@@ -1,0 +1,100 @@
+.modalContent {
+    display: flex;
+    flex-direction: row;
+
+    .modalTitle {
+        align-self: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #425066;
+    }
+
+    .modalDesc {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .modalTitle {
+            font-size: 24px;
+            font-weight: 600;
+            color: #425066;
+        }
+        .modalDescContent {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            span {
+                margin-left: 2%;
+                font-size: 16px;
+                font-weight: 400;
+                color: #425066;
+            }
+        }
+    }
+    .modalForm {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .form {
+            width: 100%;
+            // max-width: 500px;
+            margin: 0 auto;
+            :global {
+                .ant-form-item-label {
+                    label {
+                        font-weight: 500;
+                        color: #425066;
+                    }
+                }
+                .ant-input,
+                .ant-select-selector {
+                    border-radius: 6px;
+                    &:hover,
+                    &:focus {
+                        border-color: #DC1F27;
+                    }
+                }
+                .ant-form-item-explain-error {
+                    font-size: 12px;
+                    margin-top: 4px;
+                }
+            }
+        }
+        .submitButton {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 16px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .modalContent {
+        .modalDesc {
+            .modalDescContent {
+                display: none;
+            }
+            .modalTitle {
+                text-align: center;
+            }
+        }
+        .modalForm {
+            // width: 70%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .modalContent {
+        flex-direction: column;
+        .modalDesc {
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

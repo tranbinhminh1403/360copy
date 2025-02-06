@@ -1,0 +1,57 @@
+.customerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    .titleCustomer {
+        font-size: 40px;
+        font-weight: 300;
+        color: #425066;
+    }
+    .titleAbout {
+        font-size: 40px;
+        font-weight: 700;
+        color: #DC1F27;
+    }
+  }
+
+
+
+  .titleCardContainer {
+    width: 1200px;
+    // margin-top: 60px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    // width: 90%;
+    .carousel {
+      margin-top: 20px;
+      width: 90%;
+      padding-left: 10%;
+      .titleCardItem {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .customerContainer {
+    .titleCardContainer {
+      width: 100%;
+      .carousel {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}

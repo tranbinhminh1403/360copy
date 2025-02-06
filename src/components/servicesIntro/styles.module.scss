@@ -1,0 +1,36 @@
+.servicesIntro {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    
+    > div:first-child {
+        // padding-right: 40px;
+    }
+    
+    > div:last-child {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .leftGroup {
+        padding-left: 100px;
+        .title {
+            font-size: 32px;
+            font-weight: 700;
+        }
+    
+        .description {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .servicesIntro {
+    flex-direction: column;
+    .leftGroup {
+      padding-left: 0;
+    }
+  }
+}

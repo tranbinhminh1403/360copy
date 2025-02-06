@@ -1,0 +1,61 @@
+.docContent {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .docContentTitle {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        color: #DC1F27;
+    }
+    .docContentList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .docContentItem {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .docContentItemTitle {
+                font-size: 20px;
+                font-weight: 600;
+                color: #425066;
+            }
+            .docContentItemDesc {
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .docContentItemLink {
+                width: fit-content;
+                margin-left: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .docContent {
+        margin: 0;
+        .docContentTitle {
+            font-size: 20px;
+        }
+        .docContentList {
+            .docContentItem {
+                .docContentItemTitle {
+                    font-size: 16px;
+                }
+                .docContentItemDesc {
+                    font-size: 14px;
+                }
+                .docContentItemLink {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.avatarGroup {
+  display: flex;
+  align-items: center;
+
+  .avatarItem {
+    margin-right: -8px; // Creates overlap effect
+    border: 2px double #ffffff; // White border around avatars
+    border-radius: 50%;
+    width: 40px; // Adjust size as needed
+    height: 40px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

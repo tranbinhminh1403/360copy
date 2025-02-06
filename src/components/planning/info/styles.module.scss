@@ -1,0 +1,36 @@
+.pricingInfo {
+    // border: 1px solid #E0E0E0;
+    width: 80%;
+    .title {
+        color: #425066;
+        font-size: 26px;
+        font-weight: 400;
+        margin-bottom: 50px;
+
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .itemDesc {
+                font-size: 18px;
+                font-weight: 400;
+                color: #425066;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .pricingInfo {
+        width: 90%;
+    }
+}

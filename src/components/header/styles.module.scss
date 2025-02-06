@@ -1,0 +1,48 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #DC1F27;
+    align-items: center;
+    padding: 10px 20px;
+
+    color: white;
+    .navItems {
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s ease;
+        width: fit-content;
+        color: white;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+    
+        &:hover {
+            scale: 1.1;
+            
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.drawerItems {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+
+}
+

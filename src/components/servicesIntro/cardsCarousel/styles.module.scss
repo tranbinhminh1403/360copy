@@ -1,0 +1,50 @@
+.cardsCarousel {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    
+    :global {
+        .ant-carousel .slick-prev,
+        .ant-carousel .slick-next {
+            display: none !important;
+        }
+    }
+
+    .prevArrow,
+    .nextArrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .prevArrow {
+        left: 10px;
+    }
+
+    .nextArrow {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+  .cardsCarousel {
+    width: 100%;
+    .prevArrow,
+    .nextArrow {
+      display: none !important;
+    }
+  }
+}

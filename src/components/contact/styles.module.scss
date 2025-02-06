@@ -1,0 +1,23 @@
+.contact {
+    .contactImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-left: 100px;
+    }
+
+    .contactContent {
+        margin-top: 60px;
+        height: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    .contactContent {
+      margin-top: 0;
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+@keyframes ring {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-15deg); }
+  30% { transform: rotate(15deg); }
+  40% { transform: rotate(-15deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.callButton {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    background-color: rgba(255, 140, 0, 0.8); // Orange with transparency
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+    .callLink {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .callIcon {
+            margin-right: 10px;
+            animation: ring 1s infinite;
+        }
+    }
+}
