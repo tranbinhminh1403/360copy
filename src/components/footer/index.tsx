@@ -35,7 +35,7 @@ import { useWindowSize } from "../../hooks/useWindowSize";
 //   },
 // ];
 
-const Footer = ({openModal}: {openModal: () => void}) => {
+const Footer = ({openModal, openAboutModal}: {openModal: () => void, openAboutModal: () => void}) => {
   const [width] = useWindowSize();
 
   return (
@@ -88,7 +88,7 @@ const Footer = ({openModal}: {openModal: () => void}) => {
             <p className={styles.footerLinkItem} onClick={() => scrollToElement("service")}>Dịch vụ</p>
             <p className={styles.footerLinkItem} onClick={() => openModal()}>Tài liệu</p>
             <p className={styles.footerLinkItem}>Liên hệ</p>
-            <p className={styles.footerLinkItem}>Về chúng tôi</p>
+            <p className={styles.footerLinkItem} onClick={() => openAboutModal()}>Về chúng tôi</p>
 
           </div>
         </div>

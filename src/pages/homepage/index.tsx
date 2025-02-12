@@ -9,7 +9,7 @@ import ServicesIntro from "../../components/servicesIntro";
 import Info from "../../components/info";
 import AnimatedSection from "../../components/common/animation";
 import RingPhone from "../../components/ringPhone";
-const Homepage = () => {
+export const Homepage = () => {
   return (
     <>
       <HeaderAndFooter>
@@ -49,4 +49,3 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
