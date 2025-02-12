@@ -9,6 +9,8 @@ const useIntersectionObserver = (options = {}) => {
       setIsVisible(entry.isIntersecting);
     }, options);
 
+    
+
     const currentElement = elementRef.current;
     if (currentElement) {
       observer.observe(currentElement);
