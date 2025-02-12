@@ -53,7 +53,7 @@ const Order = () => {
               {orderData.gender === "male" ? "Nam" : "Nữ"}
             </Descriptions.Item>
             <Descriptions.Item label="Thời gian nhận tư vấn">
-              {dayjs(orderData.time).format("DD/MM/YYYY HH:mm")}
+              {dayjs(orderData.period).format("DD/MM/YYYY HH:mm")}
             </Descriptions.Item>
             <Descriptions.Item label="Vấn đề cần tư vấn" span={2}>
               <div className="max-h-32 overflow-y-auto">{orderData.note}</div>

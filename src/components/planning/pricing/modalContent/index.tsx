@@ -31,7 +31,7 @@ const ModalContent = ({
         price: parseInt(pricingList.find((item) => item.value === values.title)?.price?.replace(/\D/g, "") || "0", 10),
       };
 
-      console.log(formattedValues);
+      console.log(formattedValues.period);
 
       mutate(formattedValues, {
         onSuccess: (response) => {
