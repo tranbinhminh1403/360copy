@@ -1,6 +1,7 @@
 import './App.css'
-import Homepage from './pages/homepage'
 import ThemeConfig from './themeConfig'
+import {RouterProvider} from 'react-router-dom'
+import {router} from './routes'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <ThemeConfig>
-        <Homepage />
+        <RouterProvider router={router} />
       </ThemeConfig>
     </>
   )

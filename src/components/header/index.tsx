@@ -8,7 +8,7 @@ import { scrollToElement, scrollToTop } from "../../utils";
 import styles from "./styles.module.scss";
 import { useWindowSize } from "../../hooks/useWindowSize";
 import BasicDrawer from "../common/drawer";
-const Header = ({openModal}: {openModal: () => void}) => {
+const Header = ({openModal, openAboutModal}: {openModal: () => void, openAboutModal: () => void}) => {
   const [width] = useWindowSize();
   const [open, setOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const Header = ({openModal}: {openModal: () => void}) => {
     {
       title: 'Về chúng tôi',
       link: () => {
-        scrollToElement('footer')
+        openAboutModal()
         setOpen(false)
       }
     },
@@ -64,7 +64,7 @@ const Header = ({openModal}: {openModal: () => void}) => {
       ))}
 
       <div className="flex items-center gap-5">
-        <DisplayImage  image={logo9hr} alt="logo" width={50} pointer={true} onClick={() => window.open('https://www.facebook.com/Vuatuyendungnhansu/', '_blank')} />
+        <DisplayImage  image={logo9hr} alt="logo" width={50} pointer={true} onClick={() => window.open('https://www.9hr.vn/ve-chung-toi', '_blank')} />
         <DisplayImage image={its} alt="logo" width={39} pointer={true} onClick={() => window.open('https://interits.com/', '_blank')} />
       </div>
 

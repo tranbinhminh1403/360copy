@@ -10,9 +10,9 @@ import { pricingList } from "./modalContent/optionsData";
 
 
 const Pricing = () => {
-  const [value, setValue] = useState('p1');
+  const [value, setValue] = useState('Gói hỗ trợ toàn diện');
   const [open, setOpen] = useState(false);
-  const [selectedPricing, setSelectedPricing] = useState('p1');
+  const [selectedPricing, setSelectedPricing] = useState('Gói hỗ trợ toàn diện');
 
   const handlePricingChange = (value: string) => {
     setSelectedPricing(value);

@@ -10,7 +10,7 @@ export const useWindowSize = () => {
       
       window.addEventListener('resize', handleResize);
       handleResize();
-      console.log(size)
+      // console.log(size)
       return () => window.removeEventListener('resize', handleResize);
 
     },[window.innerWidth, window.innerHeight]); 

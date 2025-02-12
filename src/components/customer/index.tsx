@@ -4,9 +4,10 @@ import styles from "./styles.module.scss";
 import { Carousel } from "antd";
 import { useWindowSize } from "../../hooks/useWindowSize";
 
-import customer1 from "../../assets/avatar/tc1.png";
-import customer2 from "../../assets/avatar/tc2.png";
-import customer3 from "../../assets/avatar/tc3.png";
+import customer1 from "../../assets/tc1.jpg";
+import customer2 from "../../assets/tc2.jpg";
+import customer3 from "../../assets/tc3.jpg";
+import customer4 from "../../assets/tc4.jpg";
 import AnimatedSection from "../common/animation";
 
 // const mockDesc = 'Lorem ipsum dolor sit amet consectetur. Leo vitae velit egestas purus quis. In adipiscing pulvinar facilisi posuere. Mauris faucibus vitae tristique varius ut pellentesque. Eleifend elit.'
@@ -36,13 +37,13 @@ const Customer = () => {
         "Nhờ có sự hỗ trợ giải đáp tận tình của laodong360 mà thời gian tra cứu thông tin của mình được rút ngắn, tìm kiếm có chọn lọc. Giải quyết vấn đề nhanh hơn hẳn.",
     },
     {
-      image: customer3,
+      image: customer4,
       name: "Trịnh Phương Tuấn",
       rating: 5,
       description: "Giải đáp dễ hiểu, tận tình, nhiệt tình và nhanh chóng",
     },
     {
-      image: customer2,
+      image: customer3,
       name: "Nguyễn Ngọc Mai",
       rating: 5,
       description:
