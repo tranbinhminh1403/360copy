@@ -51,7 +51,7 @@ export const selectOptions = [
 ];
 
 export const genderOptions = [
-  { value: "Name", label: "Nam" },
+  { value: "Nam", label: "Nam" },
   { value: "Nữ", label: "Nữ" },
   { value: "Khác", label: "Khác" },
 ];
