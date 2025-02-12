@@ -50,7 +50,7 @@ const Order = () => {
             </Descriptions.Item>
             <Descriptions.Item label="Tuổi">{orderData.age}</Descriptions.Item>
             <Descriptions.Item label="Giới tính">
-              {orderData.gender === "male" ? "Nam" : "Nữ"}
+              {orderData.gender}
             </Descriptions.Item>
             <Descriptions.Item label="Thời gian nhận tư vấn">
               {dayjs(orderData.period).format("DD/MM/YYYY HH:mm")}
