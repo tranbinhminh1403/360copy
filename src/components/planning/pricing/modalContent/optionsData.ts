@@ -63,6 +63,7 @@ export const pricingList = [
     expiry: "Tư vấn miễn phí 30 phút",
     price: "150.000 VND",
     priceDesc: "",
+    period: 30,
   },
   {
     value: "Gói hỗ trợ nâng cao",
@@ -70,6 +71,7 @@ export const pricingList = [
     expiry: "Tư vấn miễn phí 20 phút",
     price: "100.000 VND",
     priceDesc: "",
+    period: 20,
   },
   {
     value: "Gói hỗ trợ cơ bản",
@@ -77,5 +79,6 @@ export const pricingList = [
     expiry: "Tư vấn miễn phí 10 phút",
     price: "50.000 VND",
     priceDesc: "",
+    period: 10,
   },
 ];

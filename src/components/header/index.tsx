@@ -57,7 +57,7 @@ const Header = ({openModal, openAboutModal}: {openModal: () => void, openAboutMo
         ))}
       </BasicDrawer>
       <div>
-        <DisplayImage image={logo} alt="logo" width={45} pointer={true} onClick={() => scrollToTop()} />
+        <DisplayImage image={logo} alt="logo" width={45} pointer={true}  onClick={() => (window.location.href = "/")} />
       </div>
       { width > 768 && navItems.map((item, index) => (
         <p className={styles.navItems} key={index} onClick={item.link}>{item.title}</p>

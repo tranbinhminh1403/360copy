@@ -27,11 +27,14 @@ const ModalContent = ({
       const formattedValues = {
         ...values,
         age: parseInt(values.age, 10),
-        period: values.time ? dayjs(values.time).format('YYYY-MM-DD HH:mm:ss') : null,
+        time: values.time ? dayjs(values.time).format('YYYY-MM-DD HH:mm:ss') : null,
         price: parseInt(pricingList.find((item) => item.value === values.title)?.price?.replace(/\D/g, "") || "0", 10),
+        period: pricingList.find((item) => item.value === values.title)?.period || 0,
+
       };
 
       console.log(formattedValues.period);
+      console.log(formattedValues.time);
 
       mutate(formattedValues, {
         onSuccess: (response) => {
@@ -40,7 +43,8 @@ const ModalContent = ({
           form.resetFields();
           // Navigate to order page with response data
           if (onCancel) onCancel();
-          window.location.href = `/order/${response.data.id}?state=${encodeURIComponent(JSON.stringify(response.data))}`;
+          window.location.href = response.data.payment_url;
+          // console.log(response);
         },
         onError: () => {
           messageApi.error("Có lỗi xảy ra. Vui lòng thử lại!");
