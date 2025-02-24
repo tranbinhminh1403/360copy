@@ -10,7 +10,7 @@ const AdminLogin = () => {
   const onFinish = async (values: { username: string; password: string }) => {
     try {
       setLoading(true);
-      const response = await axios.post(import.meta.env.VITE_AUTH_API, values);
+      const response = await axios.post(import.meta.env.VITE_AUTH_API + '/login', values);
       
       // Store the JWT token
       localStorage.setItem('adminToken', response.data.token);
@@ -21,10 +21,10 @@ const AdminLogin = () => {
       });
 
       navigate('/admin/orders');
-    } catch (error) {
+    } catch (error: any) {
       notification.error({
         message: 'Đăng nhập thất bại',
-        description: 'Tên đăng nhập hoặc mật khẩu không đúng',
+        description: error.response.data.message || 'Tên đăng nhập hoặc mật khẩu không đúng',
       });
     } finally {
       setLoading(false);
@@ -41,17 +41,17 @@ const AdminLogin = () => {
           layout="vertical"
         >
           <Form.Item
-            label="Username"
+            label="Tên đăng nhập"
             name="username"
-            rules={[{ required: true, message: 'Please input your username!' }]}
+            rules={[{ required: true, message: 'Vui lòng nhập tên đăng nhập!' }]}
           >
             <Input />
           </Form.Item>
 
           <Form.Item
-            label="Password"
+            label="Mật khẩu"
             name="password"
-            rules={[{ required: true, message: 'Please input your password!' }]}
+            rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
           >
             <Input.Password />
           </Form.Item>
@@ -64,7 +64,7 @@ const AdminLogin = () => {
               danger
               block
             >
-              Log in
+              Đăng nhập
             </Button>
           </Form.Item>
         </Form>
